@@ -9,7 +9,8 @@ import { LayoutComponent } from './layout/layout.component';
   declarations: [
     AppComponent,
     HeaderComponent, 
-    LayoutComponent
+    LayoutComponent,
+    
   ],
   imports: [
     BrowserModule
