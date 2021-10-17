@@ -7,6 +7,10 @@ import { LayoutComponent } from './shared/layout/layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LogoComponent } from './head/logo/logo.component';
 import { NavComponent } from './head/nav/nav.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 @NgModule({
@@ -15,7 +19,11 @@ import { NavComponent } from './head/nav/nav.component';
     HeaderComponent, 
     LayoutComponent,
     LogoComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    PricingComponent,
+    AboutComponent,
+    ContactComponent,
     
   ],
   imports: [
