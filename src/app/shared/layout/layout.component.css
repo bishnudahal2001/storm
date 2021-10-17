@@ -1,6 +1,10 @@
 .app-layout {
     background-color: rgb(247, 247, 247);
-    width: 100vw;
-    height: 100vh;
-
+    width: 100%;
+    height: auto;
+    
+}
+.footer {
+    height: 400px;
+    background: rgb(201, 201, 201);
 }

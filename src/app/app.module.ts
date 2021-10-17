@@ -11,6 +11,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeadlineComponent } from './shared/headline/headline.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     PricingComponent,
     AboutComponent,
     ContactComponent,
+    FooterComponent,
+    HeadlineComponent,
     
   ],
   imports: [
