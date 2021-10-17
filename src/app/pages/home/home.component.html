@@ -3,12 +3,10 @@
         <app-headline></app-headline>
     </div>
     
-    <div class="projects">
-        <app-testimonial></app-testimonial>
-        <app-testimonial></app-testimonial>
-        <app-testimonial></app-testimonial>
-        <app-testimonial></app-testimonial>
-        <app-testimonial></app-testimonial>
-        <app-testimonial></app-testimonial>
+    <div class="projects" >
+        <ng-container *ngFor="let testimonialStorage of testimonialStorage">
+            <app-testimonial [testimonialStorage]="testimonialStorage.project_name"></app-testimonial>
+        </ng-container>
+        
     </div>
 </div>

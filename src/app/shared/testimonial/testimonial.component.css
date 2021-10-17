@@ -5,14 +5,11 @@
     border: 1px solid gray;
     cursor: pointer;
 }
-.testimonial:hover {
-    background: rgb(197, 18, 18);
-}
 .overlay {
     background: rgba(206, 206, 206, 0.1);
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;

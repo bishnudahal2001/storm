@@ -11,8 +11,10 @@
 }
 .projects {
     height: auto;
-    background: indianred;
+    background: transparent;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 10px;
     
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-testimonial',
@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonial.component.css']
 })
 export class TestimonialComponent implements OnInit {
+  public hoverOverCard: boolean;
+  @Input() testimonialStorage: any[] =[{}]
 
-  constructor() { }
+  constructor() { 
+    this.hoverOverCard = false;
+  }
 
   ngOnInit(): void {
   }
+
+
 
 }
