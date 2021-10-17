@@ -1,7 +1,7 @@
 .app-header {
     height: 20%;
     width: 100vw;
-    background: linear-gradient(to right, gray, rgb(131, 131, 131), rgb(207, 207, 207), white);
+    background: linear-gradient(to right, rgb(83, 165, 233), rgb(80, 204, 235), rgb(152, 46, 214), rgb(128, 28, 209));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@
     width: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .nav {
         height: 100%;

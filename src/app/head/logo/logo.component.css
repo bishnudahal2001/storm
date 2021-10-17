@@ -1,6 +1,11 @@
+.logo_img {
+    color: rgb(0, 0, 0);
+
+    width: 125px;
+    height: 100%;
+    border-radius: 50%;
+}
 .logo_text {
     font-size: 2em;
-    color: rgb(0, 0, 0);
-    
     
 }
