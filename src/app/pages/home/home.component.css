@@ -12,9 +12,7 @@
 .projects {
     height: auto;
     background: indianred;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     
 }

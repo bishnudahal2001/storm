@@ -1,10 +1,29 @@
 .testimonial {
     background:linear-gradient(to top right, gray, rgb(151, 151, 151), rgb(99, 99, 99));
     height: 300px;
-    width: 400px;
+    width: auto;
     border: 1px solid gray;
     cursor: pointer;
 }
 .testimonial:hover {
-    background: gray;
+    background: rgb(197, 18, 18);
+}
+.overlay {
+    background: rgba(206, 206, 206, 0.1);
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+   
+}
+.overlay h4 {
+    letter-spacing: 5px;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
 }
