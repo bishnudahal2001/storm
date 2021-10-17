@@ -1,0 +1,10 @@
+.testimonial {
+    background:linear-gradient(to top right, gray, rgb(151, 151, 151), rgb(99, 99, 99));
+    height: 300px;
+    width: 400px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.testimonial:hover {
+    background: gray;
+}

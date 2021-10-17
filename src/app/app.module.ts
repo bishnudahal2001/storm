@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeadlineComponent } from './shared/headline/headline.component';
+import { TestimonialComponent } from './shared/testimonial/testimonial.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HeadlineComponent } from './shared/headline/headline.component';
     ContactComponent,
     FooterComponent,
     HeadlineComponent,
+    TestimonialComponent,
     
   ],
   imports: [
