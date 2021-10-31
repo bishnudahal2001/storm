@@ -1,10 +1,7 @@
 <div class="testimonial" (mouseover)="hoverOverCard=true" >
-    <ng-container *ngIf="hoverOverCard">
-        <div class="overlay" (mouseover)="hoverOverCard=true" (mouseout)="hoverOverCard=false">
+        <div class="overlay" *ngIf="hoverOverCard" (mouseout)="hoverOverCard=false">
             <h4>{{testimonialStorage}}</h4>
         </div>
-    </ng-container>
-        
         <img class="image" src="https://miro.medium.com/max/1400/1*u9E_tiaCY980rEJVePum_Q.jpeg">
     
 </div>

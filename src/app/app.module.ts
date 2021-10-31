@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeadlineComponent } from './shared/headline/headline.component';
 import { TestimonialComponent } from './shared/testimonial/testimonial.component';
+import { LayoverDirective } from './shared/directive/directive.directive';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { TestimonialComponent } from './shared/testimonial/testimonial.component
     FooterComponent,
     HeadlineComponent,
     TestimonialComponent,
+    LayoverDirective,
     
   ],
   imports: [

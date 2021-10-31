@@ -4,12 +4,13 @@
     width: auto;
     border: 1px solid gray;
     cursor: pointer;
+    position: relative;
 }
 .overlay {
     background: rgba(206, 206, 206, 0.1);
     position: absolute;
     height: 300px;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
