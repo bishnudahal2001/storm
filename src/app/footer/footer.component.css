@@ -2,5 +2,8 @@
     height: 400px;
     width: 100vw;
     background: rgb(184, 184, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
