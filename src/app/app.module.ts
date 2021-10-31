@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeadlineComponent } from './shared/headline/headline.component';
 import { TestimonialComponent } from './shared/testimonial/testimonial.component';
 import { LayoverDirective } from './shared/directive/directive.directive';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { LayoverDirective } from './shared/directive/directive.directive';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

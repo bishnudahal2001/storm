@@ -1,14 +1,9 @@
-<ng-container >
-
-
-    <div>
-        <a href="#">Services</a>
-    </div>
-    <div>
-        <a href="#">About</a>
-    </div>
-    <div>
-        <a href="#">Contact</a>
-    </div>
-
-</ng-container>
+<div class="container">
+    <nav  mat-tab-nav-bar>
+       
+           <a class="nav_item" mat-tab-link [active]="value === home" (click)="value = home">Home</a>
+           <a class="nav_item" mat-tab-link   [active]="value === contact" (click)="value = contact" >Contact</a>
+           <a class="nav_item" mat-tab-link   [active]="value === service" (click)="value = service" >Services</a>
+      </nav>
+    
+</div>

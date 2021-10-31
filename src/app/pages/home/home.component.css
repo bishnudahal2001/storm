@@ -9,12 +9,26 @@
     width: 100%;
     background: green;
 }
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 .projects {
     height: auto;
     background: transparent;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 300px 300px ;
     grid-gap: 10px;
     
+}
+.testimonial {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.recent_text {
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: rgb(88, 88, 88);
+    font-family: 'Alfa Slab One', cursive;
 }

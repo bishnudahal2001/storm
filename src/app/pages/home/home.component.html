@@ -2,7 +2,9 @@
     <div class="headline">
         <app-headline></app-headline>
     </div>
-    
+    <div class="testimonial">
+        <h1 class="recent_text">View Our Recent Work</h1>
+    </div>
     <div class="projects" >
         <ng-container *ngFor="let testimonialStorage of testimonialStorage">
             <app-testimonial [testimonialStorage]="testimonialStorage.project_name"></app-testimonial>
