@@ -10,6 +10,17 @@
       "StackName": "amplify-backend-staging-23525",
       "StackId": "arn:aws:cloudformation:us-east-2:553499405141:stack/amplify-backend-staging-23525/b076d9f0-45bc-11ec-b8f2-0a1f35db9b74",
       "AmplifyAppId": "d2ccvs9tjqml6f"
+    },
+    "categories": {
+      "auth": {
+        "cognito5dd253ed": {}
+      },
+      "function": {
+        "messageFunction": {
+          "deploymentBucketName": "amplify-backend-staging-23525-deployment",
+          "s3Key": "amplify-builds/messageFunction-46522b754b59626c6c49-build.zip"
+        }
+      }
     }
   }
 }
