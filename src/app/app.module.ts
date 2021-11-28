@@ -15,6 +15,7 @@ import { LayoverDirective } from './shared/directive/directive.directive';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ServiceComponent } from './pages/home/service.component';
 import { ContactComponent } from './pages/home/contact.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ContactComponent } from './pages/home/contact.component';
     BrowserModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
