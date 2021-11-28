@@ -8,14 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LogoComponent } from './head/logo/logo.component';
 import { NavComponent } from './head/nav/nav.component';
 import { HomeComponent } from './pages/home/home.component';
-import { PricingComponent } from './pages/pricing/pricing.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeadlineComponent } from './shared/headline/headline.component';
 import { TestimonialComponent } from './shared/testimonial/testimonial.component';
 import { LayoverDirective } from './shared/directive/directive.directive';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ServiceComponent } from './pages/home/service.component';
+import { ContactComponent } from './pages/home/contact.component';
 
 
 @NgModule({
@@ -26,13 +25,12 @@ import {MatTabsModule} from '@angular/material/tabs';
     LogoComponent,
     NavComponent,
     HomeComponent,
-    PricingComponent,
-    AboutComponent,
-    ContactComponent,
     FooterComponent,
     HeadlineComponent,
     TestimonialComponent,
     LayoverDirective,
+    ServiceComponent,
+    ContactComponent
     
   ],
   imports: [

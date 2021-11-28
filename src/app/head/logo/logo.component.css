@@ -11,10 +11,14 @@
     margin-top: 30px;
     font-family: 'Alfa Slab One', cursive;
     letter-spacing: 2px;
+    height: 100%;
     
 }
-.logo_container {
+.logo {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
