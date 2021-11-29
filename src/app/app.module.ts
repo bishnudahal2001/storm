@@ -21,7 +21,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms'; 
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import { MatSelectModule } from '@angular/material/select'
+import { MatButtonToggleModule} from '@angular/material/button-toggle'
 
 @NgModule({
   declarations: [
@@ -51,7 +52,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatButtonToggleModule
     
   ],
   providers: [],

@@ -1,7 +1,8 @@
 .contact {
     height: 80vh;
     width: 100%;
-    background: url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    /* background: url('https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'); */
+    background-color: black;
     margin-top: 80px;
     padding: 1em;
     background-repeat: no-repeat;
@@ -27,3 +28,28 @@
   .example-full-width {
     width: 100%;
   }
+  .form {
+    height: 80%;
+  }
+  .form-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+  }
+  .form-bottom {
+    height: 80%;
+  }
+  .message {
+    width: 100%;
+  }
+.ses {
+  float: right;
+}
+.ses-img {
+  height: 30px;
+  width: 30px;
+  float: right;
+  border-radius: 50%;
+  margin-left: 10px;
+}

@@ -3,27 +3,42 @@
         <mat-card class="card">
             <mat-card-header>
                 <mat-card-title>Bishnu Dahal</mat-card-title>
-                <mat-card-subtitle>Consultant</mat-card-subtitle>
+                <mat-card-subtitle>Owner/Consultant</mat-card-subtitle>
                 <img src="https://previews.123rf.com/images/djvstock/djvstock1610/djvstock161004225/64775568-teen-boy-character-avatar-vector-illustration-design.jpg" mat-card-avatar>
             </mat-card-header>
-            <mat-form-field appearance="legacy">
-                <mat-label>Email</mat-label>
-                <input required value="userEmail" matInput placeholder="example@gmail.com" [(ngModel)]="userEmail">
-            </mat-form-field>
-            <br/>
-            <mat-form-field appearance="legacy">
-                <mat-label>Full Name</mat-label>
-                <input required value="username" matInput placeholder="John Doe" [(ngModel)]="username">
-            </mat-form-field>
-            <br/>
-            <mat-form-field appearance="legacy">
-                <mat-label>Message</mat-label>
-                <textarea required value="message" matInput [(ngModel)]="message"></textarea>
-            </mat-form-field>
-            <br/>
-            <button mat-raised-button color="primary" (click)="test()" >submit</button>
+           <div class="form">
+               <div class="form-top">
+                <mat-form-field appearance="legacy">
+                    <mat-label>Plan</mat-label>
+                    <mat-select [(ngModel)]="plan" >
+                        <mat-option value="shopifyLiquid">Shopify Theme Development</mat-option>
+                        <mat-option value="shopifyAppDevelopment">Shopify App Development</mat-option>
+                        <mat-option value="webAppDevelopment">Serverless Web Development</mat-option>
+                      </mat-select>
+                </mat-form-field>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Full Name</mat-label>
+                    <input required value="username" matInput placeholder="John Doe" [(ngModel)]="username">
+                </mat-form-field>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Email</mat-label>
+                    <input required value="userEmail" matInput placeholder="example@gmail.com" [(ngModel)]="userEmail">
+                </mat-form-field>
+                <br/>
+                
+                <br/>
+                </div>
+                <div class="form-bottom">
+                <mat-form-field appearance="legacy" class="message">
+                    <mat-label>Message</mat-label>
+                    <textarea rows="10" class="message" required value="message"  matInput [(ngModel)]="message"></textarea>
+                </mat-form-field>
+                <br/>
+                <button mat-raised-button color="primary" (click)="test()" >submit</button>
+                <img class="ses-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_w3rWy9Bs6FG8RPOtPj9fY4nC26AvarxYg&usqp=CAU">
+                <h3 class="ses">Powered by AWS SES</h3>    
+            </div>
+            </div>
         </mat-card>
-      
-        
     </div>
 </ng-container>
