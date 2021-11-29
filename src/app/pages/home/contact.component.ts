@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { MessageComponent } from "./message.model";
+import { HttpClient } from "@angular/common/http";
 @Component({
     selector: 'app-contact',
     templateUrl: './contact.component.html',
@@ -15,18 +16,36 @@ export  class ContactComponent {
     public webAppDevelopment = 'webapp'
     
 
-    constructor() {
+    constructor(private http: HttpClient) {
+
+        http.get('/message', {
+            responseType: 'text'
+        }).subscribe((data)=> {
+            console.log(data)
+
+        })
 
     }
 
-    public test(): void {
+    public sendMail(): void {
         if(this.userEmail && this.username && this.message) {
         const SNSMessage = new MessageComponent(this.userEmail, this.username, this.message, this.plan)
         console.log(SNSMessage);
+            
+
+
+
+
+
+
+
+
+
         this.userEmail = ''
         this.username = ''
         this.message = ''
         this.plan = ''
+
         }
         
     }

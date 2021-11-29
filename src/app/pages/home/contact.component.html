@@ -34,11 +34,13 @@
                     <textarea rows="10" class="message" required value="message"  matInput [(ngModel)]="message"></textarea>
                 </mat-form-field>
                 <br/>
-                <button mat-raised-button color="primary" (click)="test()" >submit</button>
+                <button mat-raised-button color="primary" (click)="sendMail()" >submit</button>
                 <img class="ses-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo_w3rWy9Bs6FG8RPOtPj9fY4nC26AvarxYg&usqp=CAU">
                 <h3 class="ses">Powered by AWS SES</h3>    
             </div>
             </div>
+            
         </mat-card>
+        
     </div>
 </ng-container>
