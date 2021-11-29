@@ -10,6 +10,7 @@ export class NavComponent implements OnInit {
     public home: string = 'Home'
     public service: string = 'Services'
     public contact: string = 'Contact'
+    public testimonial: string = 'Testimoial'
     public value: string;
 
   constructor() {

@@ -1,13 +1,15 @@
+/* $cornflower-blue: #919BFFff;
+$cornflower-blue-2: #7C8BEDff;
+$glaucous: #677BDBff;
+$han-blue: #526BCAff;
+$cerulean-blue: #3D5AB8ff;
+$cobalt-blue: #284AA6ff;
+$dark-cornflower-blue: #133A94ff; */
 .home {
     background-color: rgb(228, 228, 228);
     height: auto;
     width: 100vw;
-
-}
-.headline {
-    height: 100vh;
-    width: 100%;
-    background: green;
+    overflow: hidden;
 }
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 .projects {

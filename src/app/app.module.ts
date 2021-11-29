@@ -16,6 +16,11 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { ServiceComponent } from './pages/home/service.component';
 import { ContactComponent } from './pages/home/contact.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms'; 
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +36,8 @@ import {MatCardModule} from '@angular/material/card';
     TestimonialComponent,
     LayoverDirective,
     ServiceComponent,
-    ContactComponent
+    ContactComponent,
+    
     
   ],
   imports: [
@@ -39,7 +45,13 @@ import {MatCardModule} from '@angular/material/card';
     BrowserAnimationsModule,
     MatTabsModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
