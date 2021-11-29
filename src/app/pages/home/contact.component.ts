@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { MessageComponent } from "./message.model";
 import { HttpClient } from "@angular/common/http";
+import Amplify, { API } from 'aws-amplify';
 @Component({
     selector: 'app-contact',
     templateUrl: './contact.component.html',
@@ -17,13 +18,11 @@ export  class ContactComponent {
     
 
     constructor(private http: HttpClient) {
-
-        http.get('/message', {
-            responseType: 'text'
-        }).subscribe((data)=> {
+        http.get('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging/message').subscribe((data)=> {
             console.log(data)
 
         })
+
 
     }
 
