@@ -34,10 +34,7 @@ export class HomeComponent implements OnInit {
   },
 ]
 
-  constructor(private readonly _http: HttpClient) { 
-    this._http.get('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging/message').subscribe((message) =>{
-      console.log(message);
-    })
+  constructor(private readonly _http: HttpClient) {
     
   }
 
