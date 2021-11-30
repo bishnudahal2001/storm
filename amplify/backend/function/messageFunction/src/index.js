@@ -1,7 +1,3 @@
-const { createServer } = require("http");
-
-const app = require('../src/app')
-const server = createServer(app)
 exports.handler = async (event) => {
     // TODO implement
     const response = {
