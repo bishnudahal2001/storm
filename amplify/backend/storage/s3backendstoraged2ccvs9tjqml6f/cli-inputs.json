@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3backendstoraged2ccvs9tjqml6f",
+  "bucketName": "backend-storage-d2ccvs9tjqml6f",
+  "policyUUID": "1131ce31",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

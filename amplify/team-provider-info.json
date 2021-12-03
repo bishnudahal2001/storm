@@ -19,7 +19,7 @@
       "function": {
         "messageFunction": {
           "deploymentBucketName": "amplify-backend-staging-23525-deployment",
-          "s3Key": "amplify-builds/messageFunction-644550344331734a7866-build.zip"
+          "s3Key": "amplify-builds/messageFunction-6f3452397554394b554f-build.zip"
         }
       }
     }

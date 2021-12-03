@@ -25,5 +25,11 @@ export type AmplifyDependentResourcesAttributes = {
             "ApiName": "string",
             "ApiId": "string"
         }
+    },
+    "storage": {
+        "s3backendstoraged2ccvs9tjqml6f": {
+            "BucketName": "string",
+            "Region": "string"
+        }
     }
 }
