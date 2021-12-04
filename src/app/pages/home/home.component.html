@@ -1,8 +1,11 @@
 <div class="home">
     <div class="headline">
+        <app-headline></app-headline>
     </div>
     <app-service class="service" id="service"></app-service>
-
+    <div class="testimonial" id="testimonial">
+        <h1 class="recent_text">View Our Recent Work</h1>
+    </div>
     <div class="projects" >
         <ng-container *ngFor="let testimonialStorage of testimonialStorage">
             <app-testimonial [testimonialStorage]="testimonialStorage.project_name"></app-testimonial>

@@ -1,9 +1,7 @@
 import { Component } from "@angular/core";
 import { MessageComponent } from "./message.model";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { v4 as uuid } from 'uuid';
+import { HttpClient } from "@angular/common/http";
 import Amplify, { API } from 'aws-amplify';
-const aws_exports = require('../../../aws-exports')
 @Component({
     selector: 'app-contact',
     templateUrl: './contact.component.html',
@@ -17,40 +15,28 @@ export  class ContactComponent {
     public shopifyLiquid = 'liquid'
     public shopifyAppDevelopment = 'app'
     public webAppDevelopment = 'webapp'
-    public test = ''
     
 
     constructor(private http: HttpClient) {
-        API.get( "messageAPI" ,"/", {}).then((res)=> {
-            const { id, firstname, lastname, message } = res.Item
-            this.test = firstname
-        }).catch((err) =>{
-            console.log(err);
-            
+        http.get('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging').subscribe((data)=> {
+            console.log(data)
+
         })
+
+
     }
-   
+
     public sendMail(): void {
         if(this.userEmail && this.username && this.message) {
         const SNSMessage = new MessageComponent(this.userEmail, this.username, this.message, this.plan)
-        const data = {
-            header: new HttpHeaders({
-                    'Content-Type': 'application/json',
-                 }),
-            body: {
-            id: uuid(),
-            firstname: this.username.split(' ')[0],
-            lastname: this.username.split(' ')[1],
-            message: this.message
-         }
-        }
-            API.post("messageAPI", "/", data).then((res)=> {
-                console.log(res);
-                
-            }).catch(err => {
-                console.log(err);
+        console.log(SNSMessage);
+            this.http.post('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging', {
+                content: JSON.stringify(SNSMessage)
+            }).subscribe((data)=> {
+                console.log(data);
                 
             })
+
 
         this.userEmail = ''
         this.username = ''

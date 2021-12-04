@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import Amplify from "aws-amplify";
+const aws_exports = require('../aws-exports')
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'stormZtocks';
+  ngOnInit() {
+    Amplify.configure(aws_exports);
+  }
 }
