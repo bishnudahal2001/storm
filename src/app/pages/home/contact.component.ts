@@ -18,18 +18,11 @@ export  class ContactComponent {
     
 
     constructor(private http: HttpClient) {
-        http.get('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging').subscribe((data)=> {
-            console.log(data)
-
-        })
-
-
     }
 
     public sendMail(): void {
         if(this.userEmail && this.username && this.message) {
         const SNSMessage = new MessageComponent(this.userEmail, this.username, this.message, this.plan)
-        console.log(SNSMessage);
             this.http.post('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging', {
                 content: JSON.stringify(SNSMessage)
             }).subscribe((data)=> {
