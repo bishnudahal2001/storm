@@ -23,20 +23,15 @@ export  class ContactComponent {
     public sendMail(): void {
         if(this.userEmail && this.username && this.message) {
         const SNSMessage = new MessageComponent(this.userEmail, this.username, this.message, this.plan)
-            this.http.post('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging', {
-                content: JSON.stringify(SNSMessage)
-            }).subscribe((data)=> {
-                console.log(data);
-                
+            this.http.post('https://7fzwretr2i.execute-api.us-east-2.amazonaws.com/staging', JSON.stringify(SNSMessage)).subscribe((err)=> {
+                if(err) {
+                    console.log(err);
+                }
             })
-
-
         this.userEmail = ''
         this.username = ''
         this.message = ''
         this.plan = ''
-
         }
-        
     }
 }
