@@ -35,3 +35,14 @@ $dark-cornflower-blue: #133A94ff; */
     color: rgb(88, 88, 88);
     font-family: 'Alfa Slab One', cursive;
 }
+@media only screen and (max-width: 768px){
+    .projects {
+        height: auto;
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px ;
+        grid-gap: 10px;
+        
+    }
+}
